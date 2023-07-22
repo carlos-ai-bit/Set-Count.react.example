@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./App.css";
 function App() {
-  const [count, setCount] = useState("0");
+  const [count, setCount] = useState(0);
   function decreementCount() {
-    setCount(count - 1);
+    setCount((prevcount) => prevcount - 1);
   }
   function increementCount() {
-    setCount(count + 1);
+    setCount((prevcount) => prevcount + 1);
   }
   return (
     <>
